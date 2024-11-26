@@ -1,0 +1,37 @@
+.contacts {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    &__item {
+        font-size: 1.09rem;
+       
+        &:not(:last-child) {
+            margin-bottom: 6px;
+        }
+    }
+}
+
+/*Брейкпоинт 1024px*/
+
+@media screen and (max-width: 1024px) {
+    .contacts {
+        &__item {
+            font-size: $base-font;
+
+            &:not(:last-child) {
+                margin-bottom: 9px;
+            }
+        }
+    }
+}
+
+/*Брейкпоинт 768px*/
+
+@media screen and (max-width: 768px) {
+    .contacts {
+        &__item {
+            font-size: .91rem;
+        }
+    }
+}

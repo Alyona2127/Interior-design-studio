@@ -1,0 +1,14 @@
+.taxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Брейкпоинт 768px*/
+
+@media screen and (max-width: 768px) {
+    .taxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}

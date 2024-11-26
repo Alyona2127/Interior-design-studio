@@ -1,0 +1,19 @@
+.title {
+    font-size: $title-font;
+}
+
+/*Брейкпоинт 1024px*/
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 1.73rem;
+    }
+}
+
+/*Брейкпоинт 450px*/
+
+@media screen and (max-width: 450px) {
+    .title {
+        font-size: 1.54rem;
+    }
+}

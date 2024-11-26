@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: $base-font;
+
+}
+
+body {
+    font-family: 'Open Sans', 'Roboto Slab', sans-serif; /*верно ли здесь прописывать второй шрифт или только в .variant конкретизировать?*/    
+    text-align: center;
+}

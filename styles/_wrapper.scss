@@ -1,0 +1,12 @@
+.wrapper {
+    max-width: 1176px;
+    margin: 0 auto;
+}
+
+/*Брейкпоинт 1176px*/
+
+@media screen and (max-width: 1176px) {
+    .wrapper {
+        padding: 80px 42px;
+    }
+}
