@@ -1,0 +1,59 @@
+.interior-design-company {
+    padding: 340px 0 40px;
+    color: $secondary-color;
+
+    .heading {
+        font-size: 3.27rem;
+        letter-spacing: .02em;
+    }
+
+    &__text {
+        margin: 50px 0;
+        letter-spacing: .02em;
+    }
+
+    .button--white {
+        @include button($secondary-color);
+    }
+}
+
+/*Брейкпоинт 1024px*/
+
+@media screen and (max-width: 1024px) {
+    .interior-design-company {
+        padding: 256px 0 40px;
+
+        .heading {
+            font-size: 3.09rem;
+        }
+
+        &__text {
+            font-size: .91rem;
+            margin: 45px 0 70px;
+        }
+    }
+}
+
+/*Брейкпоинт 768px*/
+
+@media screen and (max-width: 768px) {
+    .interior-design-company {
+        padding: 90px 0 40px;
+
+        &__text {
+            margin: 22px auto 84px;
+            max-width: 643px;
+            line-height: 30.26px;
+        }
+    }
+}
+
+/*Брейкпоинт 450px*/
+
+@media screen and (max-width: 450px) {
+    .interior-design-company {
+        .heading {
+            font-size: 2rem;
+        }
+    }
+}

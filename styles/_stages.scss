@@ -1,0 +1,158 @@
+.stages {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 75px;
+
+    &__item {
+        display: flex;
+        justify-content: center;
+
+        &:not(:last-child) {
+            margin-bottom: 50px;
+        }
+    }
+
+    &__sketch::before {
+        @include icon;
+        background-image: url("../icons/sketch.png");
+    }
+
+    &__sketch::after {
+        @include pseudo;
+    }
+
+    &__vizualization::before {
+        @include icon;
+        background-image: url("../icons/vizualization.png");
+    }
+
+    &__vizualization::after {
+        @include pseudo;
+    }
+
+    &__documentation::before {
+        @include icon;
+        background-image: url("../icons/documentation.png");
+    }
+
+    &__documentation::after {
+        @include pseudo;
+    }
+
+    &__supervision::before {
+        @include icon;
+        background-image: url("../icons/supervision.png");
+    }
+
+    &__variant {
+        margin-left: 45px;
+        text-align: left;
+    }
+
+    &__caption {
+        margin-bottom: 12px;
+    }
+
+    &__text {
+        font-size: .68rem;
+        max-width: 679px;
+    }
+}
+
+/*Брейкпоинт 1024px*/
+
+@media screen and (max-width: 1024px) {
+    .stages {
+        margin-top: 40px;
+
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 51px;
+            }
+        }
+
+        &__caption {
+            font-size: .91rem;
+            margin-bottom: 15px;
+        }
+
+        &__text {
+            font-size: .64rem;
+            max-width: 532px;
+        }
+    }
+}
+
+/*Брейкпоинт 768px*/
+
+@media screen and (max-width: 768px) {
+    .stages {
+        margin-top: 35px;
+    }
+}
+
+
+/*Брейкпоинт 535px*/
+
+@media screen and (max-width: 535px) {
+    .stages {
+        &__item {
+
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &__sketch::after, &__vizualization::after, &__documentation::after {
+            @include pseudo535;
+        }
+        
+
+        &__variant {
+            margin-left: 25px;
+        }
+
+        &__caption {
+            font-size: $small-font;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            font-size: .54rem;
+        }
+    }
+}
+
+/*Брейкпоинт 424px*/
+
+@media screen and (max-width: 424px) {
+    .stages {
+
+        &__variant {
+            margin-left: 15px;
+        }
+
+        &__caption {
+            font-size: $small-font;
+            margin-bottom: 8px;
+        }
+    }
+}
+
+/*Брейкпоинт 390px*/
+
+@media screen and (max-width: 390px) {
+    .stages {
+        &__item {
+
+            &:not(:last-child) {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__text {
+            font-size: .45rem;
+        }
+    }
+}

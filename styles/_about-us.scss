@@ -1,0 +1,47 @@
+.about-us {
+    padding: 100px 0;
+    background-color: #F0F0F0;
+
+    &__image { 
+        margin: 30px auto;
+
+        img {
+            width: 100%;
+            max-width: 760px;
+        }
+    }
+
+    &__text {
+        font-size: .91rem;
+        max-width: 760px;
+        margin: 0 auto;
+    }
+}
+
+/*Брейкпоинт 1024px*/
+
+@media screen and (max-width: 1024px) {
+    .about-us {
+        padding: 80px 0;
+
+        &__image { 
+            margin: 40px auto;
+        }
+
+        &__text {
+            font-size: .82rem;
+        }
+    }
+}
+
+/*Брейкпоинт 768px*/
+
+@media screen and (max-width: 768px) {
+    .about-us {
+        padding: 70px 0;
+
+        &__image { 
+            margin: 35px auto;
+        }
+    }
+}

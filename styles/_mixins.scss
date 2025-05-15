@@ -1,0 +1,44 @@
+@mixin button($color) {
+    color: $color;
+    display: block;
+    margin: 0 auto;
+    max-width: 264px; 
+    height: 60px;
+    line-height: 60px;
+    font-size: $small-font;
+    font-weight: 700;
+    background-color: #FFBE49;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: opacity .5s linear;
+    
+    &:hover {
+        opacity: 50%;
+    }
+}
+
+@mixin button1024 {
+    max-width: 200px; 
+    height: 46px;
+    line-height: 46px;
+    font-size: .64rem;
+}
+
+@mixin icon { 
+    content: "";
+    width: 100px;    
+    height: 100px;
+    display: block;
+}
+
+@mixin pseudo {
+    content: " ";
+    width: 1px;
+    background-color: #B3B3B3;
+    height: 52px;
+    position: absolute;
+}
+
+@mixin pseudo535 {
+    height: 30px;
+}

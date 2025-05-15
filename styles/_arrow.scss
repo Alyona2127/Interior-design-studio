@@ -1,0 +1,28 @@
+.arrow::after {
+    content: "";
+    width: 57px;
+    height: 20px;
+    display: block;
+    background-image: url(../icons/arrow.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 279px auto 0;
+}
+
+/*Брейкпоинт 1024px*/
+
+@media screen and (max-width: 1024px) {
+    .arrow::after {
+        width: 45px;
+        margin: 273px auto 0;
+    }
+}
+
+/*Брейкпоинт 768px*/
+
+@media screen and (max-width: 768px) {
+    .arrow::after {
+        width: 40px;
+        margin: 76px auto 0;
+    }
+}

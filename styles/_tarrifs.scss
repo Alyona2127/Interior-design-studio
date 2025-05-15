@@ -1,0 +1,46 @@
+.tarrifs {
+    padding: 100px 0;
+    background-color: #F0F0F0;
+
+    &__text {
+        font-size: 1.09rem;
+        max-width: 532px;
+        margin: 30px auto 40px;
+    }
+}
+
+/*Брейкпоинт 1024px*/
+
+@media screen and (max-width: 1024px) {
+    .tarrifs {
+        padding: 80px 0;
+
+        &__text {
+            font-size: $base-font;
+            max-width: 594px; 
+            margin: 40px auto 60px;
+        }
+    }
+}
+
+/*Брейкпоинт 768px*/
+
+@media screen and (max-width: 768px) {
+    .tarrifs {
+        padding: 70px 0;
+
+        &__text {
+            margin: 35px auto 55px;
+        }
+    }
+}
+
+/*Брейкпоинт 450px*/
+
+@media screen and (max-width: 450px) {
+    .tarrifs {
+        &__text {
+            font-size: .82rem;
+        }
+    }
+}

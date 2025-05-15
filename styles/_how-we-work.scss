@@ -1,0 +1,19 @@
+.how-we-work {
+    padding: 100px 0;
+}
+
+/*Брейкпоинт 1024px*/
+
+@media screen and (max-width: 1024px) {
+    .how-we-work {
+        padding: 80px 0;
+    }
+}
+
+/*Брейкпоинт 768px*/
+
+@media screen and (max-width: 768px) {
+    .how-we-work {
+        padding: 70px 0;
+    }
+}
